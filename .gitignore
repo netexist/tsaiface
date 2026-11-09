@@ -1,0 +1,54 @@
+# ===== TSAIFACE（开源版）· 版本管理排除规则 =====
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+.idea/
+.vscode/
+.tmp/
+temp/
+
+# 运行环境（体积巨大，不进仓库；打包时单独处理）
+.venv/
+venv/
+env/
+runtime/
+
+# AI 模型（体积巨大，单独分发，不进仓库）
+*.onnx
+*.pth
+models/buffalo_l/
+models/insightface/
+
+# 第三方二进制（ffmpeg 各 217MB，随包分发但不进仓库）
+ffmpeg.exe
+ffprobe.exe
+ffplay.exe
+
+# 运行时产物
+*.log
+runtime.log
+test-output/
+dist/
+build/
+
+# 测试与临时素材
+*.mp4
+*.mkv
+*.avi
+!docs/**/*.mp4
+
+# 本地配置（主题、个人设置等，属本机数据）
+config/
+*.backup
+switch_states.json
+
+# 包内字体（打包时脚本自动复制，不进仓库）
+assets/fonts/
+
+# 原项目忽略项（保留）
+gfpgan/
+faceswap/
+install.bat
+/.claude

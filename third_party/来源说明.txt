@@ -1,0 +1,34 @@
+Deep-Live-Cam 上游作者源码包 · 来源说明
+==========================================
+
+文件：Deep-Live-Cam-v2.1.6-upstream-src.zip
+SHA256：FE16E0708DFA96FA5F03F73348C79CF87709643F9FBAF947FE9235A2E7230DE7
+归档日期：2026-11-06
+
+一、这是什么
+本压缩包是上游开源项目 Deep-Live-Cam 的原始源代码（未经中文化修改），用于证明本项目
+的来源与 AGPL-3.0 授权依据。本项目 TSAIFACE 是基于它的二次开发版本。
+
+- 上游仓库：https://github.com/hacksider/Deep-Live-Cam
+- 上游版本：v2.1.6（README 标注 2.1.6；modules/metadata.py 内为 2.1.5，属上游自身的版本标注不一致）
+- 开源协议：GNU Affero General Public License v3.0（AGPL-3.0），全文见包内 LICENSE
+
+二、包含什么（86 个条目）
+modules/（54）、locales/（11）、tests/（5）、.github/（4），以及 LICENSE、README.md、
+CONTRIBUTING.md、pyproject.toml、requirements.txt、run.py、run-cuda.bat、run-directml.bat、
+tkinter_fix.py、benchmark_pipeline.py、.gitattributes、.gitignore
+
+三、不包含什么
+.venv/ 虚拟环境（8.6 GB）、models/ 模型权重（264 MB）、media/ 演示素材（64 MB）、
+test-output/ 测试产物、mypi.ini 等本机个人配置
+
+四、说明
+1. 本包只存源文件，不含可运行环境，无法直接双击运行；要运行请用上层 TSAIFACE 目录。
+2. 对外交付时，安装包内同时包含两份源码：本目录的上游原版（本压缩包，用于核对来源与差异）+
+   安装包根目录 code\source-code.zip（我们修改后的源码，AGPL-3.0 要求必须提供的就是这一份）。
+3. 客户问「你们改了什么」时，用这两份对照即可；不要只给上游原版、不给 code\source-code.zip，那样不符合 AGPL-3.0。
+4. 上游版本升级时，替换本压缩包并同步更新本文件里的版本号、条目数与 SHA256。
+
+五、校验方式
+PowerShell：Get-FileHash .\Deep-Live-Cam-v2.1.6-upstream-src.zip -Algorithm SHA256
+结果应与上面 SHA256 一致。

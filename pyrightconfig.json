@@ -1,0 +1,17 @@
+{
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "runtime",
+    ".venv",
+    "venv",
+    "build",
+    "dist",
+    "models",
+    "third_party",
+    "test-output",
+    "config",
+    "**/__pycache__"
+  ]
+}
